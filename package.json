@@ -1,0 +1,36 @@
+{
+  "name": "tralytics",
+  "version": "1.0.0",
+  "description": "Self-hosted analytics server",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "nodemon src/main.ts",
+    "dev:lint": "npx eslint .",
+    "dev:test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syr0s/tralytics.git"
+  },
+  "author": "Daniel Noetzel <daniel.noetzel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syr0s/tralytics/issues"
+  },
+  "homepage": "https://github.com/syr0s/tralytics#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}

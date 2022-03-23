@@ -1,11 +1,4 @@
-import express from 'express';
+import { Server } from './utils/server';
 
-import { port } from './constants';
-
-const app = express();
-
-
-
-app.listen(port, () => {
-	console.log(`Tralytics server running. listening on port ${port}`);
-});
+const server = new Server();
+server.run();
